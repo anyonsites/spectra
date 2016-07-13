@@ -1,5 +1,10 @@
 #! /usr/bin/env python3
 
+'''
+Scripted by Xi-Jin, Xiamen University
+xjin.xmu@gmail.com
+'''
+
 import sys
 import numpy as np
 from scipy.optimize import leastsq
