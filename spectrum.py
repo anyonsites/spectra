@@ -104,6 +104,9 @@ class Spectrum:
         self.gfit_oup.append( [ parout[-1] ] )
         # compute for the estimated and fitted spectra
         self.y_gfit_sum = sumgaus( reorgpar(self.gfit_oup), self.x )
+        # correlation coefficient
+        self.corr_coef = np.corrcoef(self.y, self.y_gfit_sum)
+        # compute each peak
         self.y_gfit_peaks = []
         self.gfit_peak_pos = []
         for i in range(0,len(self.gfit_oup)-1):
